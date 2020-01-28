@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1046.0" style="-fx-background-color: #EAEAEA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Text fill="#000001" layoutX="356.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Optimize">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Text>
+      <Button layoutX="168.0" layoutY="627.0" mnemonicParsing="false" onAction="#Back" prefHeight="38.0" prefWidth="174.0" text="Close">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Text layoutX="380.0" layoutY="664.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pawn Color :" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="417.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="color" layoutX="561.0" layoutY="644.0" prefHeight="25.0" prefWidth="98.0" text="Red" visible="false" />
+      <Text layoutX="381.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turn of :" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="player" layoutX="561.0" layoutY="612.0" prefHeight="25.0" prefWidth="98.0" text="Player 1" visible="false" />
+      <Text layoutX="754.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NumberofLadders :" visible="false" wrappingWidth="173.76953125">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="754.0" layoutY="637.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NumberofSnakes :" visible="false" wrappingWidth="173.76953125">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="laddersNum" alignment="CENTER" layoutX="933.0" layoutY="646.0" prefHeight="25.0" prefWidth="98.0" text="3" visible="false" />
+      <TextField fx:id="snakesNum" alignment="CENTER" layoutX="933.0" layoutY="618.0" prefHeight="25.0" prefWidth="98.0" text="3" visible="false" />
+      <TextField fx:id="playersNum" alignment="CENTER" editable="false" layoutX="381.0" layoutY="132.0" prefHeight="38.0" prefWidth="67.0" text="2" visible="false" />
+      <Pane layoutX="51.0" layoutY="108.0" prefHeight="265.0" prefWidth="314.0" style="-fx-background-color: #EAEAEA; -fx-border-color: BEBEBE;">
+         <children>
+            <Text fx:id="TimeInSecText" layoutX="21.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time In seconds :" wrappingWidth="164.56952464580536">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="timer" alignment="CENTER" layoutX="215.0" layoutY="14.0" prefHeight="38.0" prefWidth="76.0" text="600" />
+            <TextField fx:id="simulationNum" alignment="CENTER" layoutX="215.0" layoutY="112.0" prefHeight="38.0" prefWidth="76.0" text="1000" />
+            <TextField fx:id="maxMoves" alignment="CENTER" layoutX="215.0" layoutY="64.0" prefHeight="38.0" prefWidth="76.0" text="100" />
+            <Text fx:id="SimulationNumText1" layoutX="23.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximun Moves :" wrappingWidth="164.56951904296875">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="SimulationNumText" layoutX="23.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simulation Number :" wrappingWidth="191.76953125">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="simulation" layoutX="117.0" layoutY="202.0" mnemonicParsing="false" onAction="#getNumOfSimulations" prefHeight="38.0" prefWidth="174.0" text="Auto Simulation">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Text fx:id="playerNumber" layoutX="24.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Players :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="go1" layoutX="221.0" layoutY="158.0" mnemonicParsing="false" onAction="#getNames22" prefHeight="38.0" prefWidth="33.0" text="3">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="go" disable="true" layoutX="184.0" layoutY="158.0" mnemonicParsing="false" onAction="#getNames2" prefHeight="38.0" prefWidth="33.0" text="2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="go11" layoutX="258.0" layoutY="158.0" mnemonicParsing="false" onAction="#getNames222" prefHeight="38.0" prefWidth="34.0" text="4">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="51.0" layoutY="364.0" prefHeight="257.0" prefWidth="314.0" style="-fx-background-color: #EAEAEA; -fx-border-color: BEBEBE;">
+         <children>
+            <TextField fx:id="playerName222" alignment="CENTER" layoutX="117.0" layoutY="61.0" prefHeight="38.0" prefWidth="174.0" text="Player 2" />
+            <Button fx:id="start1" layoutX="117.0" layoutY="209.0" mnemonicParsing="false" onAction="#getValues22" prefHeight="40.0" prefWidth="174.0" text="Start a game">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="playerName444" alignment="CENTER" layoutX="117.0" layoutY="160.0" prefHeight="38.0" prefWidth="174.0" text="Player4" visible="false" />
+            <Text fx:id="playerName44444" layoutX="24.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 4 :" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="playerName33333" layoutX="24.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 3 :" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="playerName333" alignment="CENTER" layoutX="117.0" layoutY="111.0" prefHeight="38.0" prefWidth="174.0" text="Player 3" visible="false" />
+            <Text fx:id="playerName22222" layoutX="24.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2 :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="playerName11111" layoutX="24.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1 :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="playerName1111" alignment="CENTER" layoutX="117.0" layoutY="14.0" prefHeight="38.0" prefWidth="174.0" text="Player 1" />
+         </children>
+      </Pane>
+      <Pane layoutX="406.0" layoutY="108.0" prefHeight="512.0" prefWidth="274.0" style="-fx-background-color: EDF1FD; -fx-border-color: BEBEBE;">
+         <children>
+            <Separator layoutX="55.0" layoutY="64.0" prefHeight="30.0" prefWidth="165.0" />
+            <TextField fx:id="SnakeS1" alignment="CENTER" layoutX="121.0" layoutY="114.0" prefHeight="38.0" prefWidth="38.0" text="94" />
+            <Text fx:id="PlayerNameLabel12" layoutX="57.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="start">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="PlayerNameLabel121" layoutX="124.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="end">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SnakesE1" alignment="CENTER" layoutX="58.0" layoutY="114.0" prefHeight="38.0" prefWidth="38.0" text="68" />
+            <Text fx:id="Between1" layoutX="107.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SnakeS2" alignment="CENTER" layoutX="122.0" layoutY="173.0" prefHeight="38.0" prefWidth="38.0" text="70" />
+            <TextField fx:id="SnakesE2" alignment="CENTER" layoutX="58.0" layoutY="173.0" prefHeight="38.0" prefWidth="38.0" text="31" />
+            <Text fx:id="Between2" layoutX="106.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SnakeS3" alignment="CENTER" layoutX="122.0" layoutY="232.0" prefHeight="38.0" prefWidth="38.0" text="78" />
+            <TextField fx:id="SnakesE3" alignment="CENTER" layoutX="58.0" layoutY="232.0" prefHeight="38.0" prefWidth="38.0" text="42" />
+            <Text fx:id="Between3" layoutX="106.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SnakeS4" alignment="CENTER" layoutX="122.0" layoutY="292.0" prefHeight="38.0" prefWidth="38.0" text="37" />
+            <TextField fx:id="SnakesE4" alignment="CENTER" layoutX="58.0" layoutY="292.0" prefHeight="38.0" prefWidth="38.0" text="18" />
+            <Text fx:id="Between4" layoutX="106.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SnakeS5" alignment="CENTER" layoutX="122.0" layoutY="352.0" prefHeight="38.0" prefWidth="38.0" text="0" visible="false" />
+            <TextField fx:id="SnakesE5" alignment="CENTER" layoutX="58.0" layoutY="352.0" prefHeight="38.0" prefWidth="38.0" text="0" visible="false" />
+            <Text fx:id="Between5" layoutX="106.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" visible="false">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SnakeS6" alignment="CENTER" layoutX="122.0" layoutY="412.0" prefHeight="38.0" prefWidth="38.0" text="0" visible="false" />
+            <TextField fx:id="SnakesE6" alignment="CENTER" layoutX="58.0" layoutY="412.0" prefHeight="38.0" prefWidth="38.0" text="0" visible="false" />
+            <Text fx:id="Between6" layoutX="106.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" visible="false">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Button fx:id="addSnakePos" layoutX="170.0" layoutY="35.0" mnemonicParsing="false" onAction="#addSnakePos1" prefHeight="38.0" prefWidth="40.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="170.0" layoutY="114.0" mnemonicParsing="false" onAction="#xS1Action1" prefHeight="40.0" prefWidth="40.0" fx:id="xS1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fx:id="PlayerNameLabel1" layoutX="74.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Snakes ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="170.0" layoutY="174.0" mnemonicParsing="false" onAction="#xS1Action2" prefHeight="40.0" prefWidth="40.0" fx:id="xS2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="170.0" layoutY="233.0" mnemonicParsing="false" onAction="#xS1Action3" prefHeight="40.0" prefWidth="40.0" fx:id="xS3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="170.0" layoutY="293.0" mnemonicParsing="false" onAction="#xS1Action4" prefHeight="40.0" prefWidth="40.0" fx:id="xS4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="170.0" layoutY="353.0" mnemonicParsing="false" onAction="#xS1Action5" prefHeight="40.0" prefWidth="40.0" visible="false" fx:id="xS5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="170.0" layoutY="413.0" mnemonicParsing="false" onAction="#xS1Action6" prefHeight="40.0" prefWidth="40.0" visible="false" fx:id="xS6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fx:id="LabelWarning1" fill="RED" layoutX="59.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Limitation" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="720.0" layoutY="108.0" prefHeight="512.0" prefWidth="274.0" style="-fx-background-color: EDF1FD; -fx-border-color: BEBEBE;">
+         <children>
+            <Separator layoutX="55.0" layoutY="71.0" prefHeight="17.0" prefWidth="165.0" />
+            <TextField fx:id="LadderS1" alignment="CENTER" layoutX="61.0" layoutY="117.0" prefHeight="38.0" prefWidth="38.0" text="79" />
+            <Text fx:id="PlayerNameLabel122" layoutX="60.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="start">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="PlayerNameLabel1212" layoutX="132.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="end">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="LadderE1" alignment="CENTER" layoutX="130.0" layoutY="117.0" prefHeight="38.0" prefWidth="38.0" text="81" />
+            <Text fx:id="Between11" layoutX="111.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="LadderS2" alignment="CENTER" layoutX="61.0" layoutY="176.0" prefHeight="38.0" prefWidth="38.0" text="22" />
+            <TextField fx:id="LadderE2" alignment="CENTER" layoutX="130.0" layoutY="176.0" prefHeight="38.0" prefWidth="38.0" text="41" />
+            <Text fx:id="Between12" layoutX="111.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="LadderS3" alignment="CENTER" layoutX="61.0" layoutY="235.0" prefHeight="38.0" prefWidth="38.0" text="5" />
+            <TextField fx:id="LadderE3" alignment="CENTER" layoutX="130.0" layoutY="235.0" prefHeight="38.0" prefWidth="38.0" text="25" />
+            <Text fx:id="Between13" layoutX="112.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="LadderS4" alignment="CENTER" layoutX="61.0" layoutY="295.0" prefHeight="38.0" prefWidth="38.0" text="10" />
+            <TextField fx:id="LadderE4" alignment="CENTER" layoutX="130.0" layoutY="295.0" prefHeight="38.0" prefWidth="38.0" text="29" />
+            <Text fx:id="Between14" layoutX="112.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="LadderS5" alignment="CENTER" layoutX="61.0" layoutY="355.0" prefHeight="38.0" prefWidth="38.0" text="28" />
+            <TextField fx:id="LadderE5" alignment="CENTER" layoutX="130.0" layoutY="355.0" prefHeight="38.0" prefWidth="38.0" text="55" />
+            <Text fx:id="Between15" layoutX="112.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="LadderS6" alignment="CENTER" layoutX="61.0" layoutY="415.0" prefHeight="38.0" prefWidth="38.0" text="44" />
+            <TextField fx:id="LadderE6" alignment="CENTER" layoutX="130.0" layoutY="415.0" prefHeight="38.0" prefWidth="38.0" text="95" />
+            <Text fx:id="Between16" layoutX="112.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="PlayerNameLabel11" layoutX="74.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ladders">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="addLadderPos" layoutX="175.0" layoutY="35.0" mnemonicParsing="false" onAction="#addLadderPos" prefHeight="38.0" prefWidth="40.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="176.0" layoutY="116.0" mnemonicParsing="false" onAction="#xE1action" prefHeight="40.0" prefWidth="40.0" fx:id="xE1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="176.0" layoutY="175.0" mnemonicParsing="false" onAction="#xE2action" prefHeight="40.0" prefWidth="40.0" fx:id="xE2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="176.0" layoutY="234.0" mnemonicParsing="false" onAction="#xE3action" prefHeight="40.0" prefWidth="40.0" fx:id="xE3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="176.0" layoutY="294.0" mnemonicParsing="false" onAction="#xE4action" prefHeight="40.0" prefWidth="40.0" fx:id="xE4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="176.0" layoutY="354.0" mnemonicParsing="false" onAction="#xE5action" prefHeight="40.0" prefWidth="40.0" fx:id="xE5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="176.0" layoutY="414.0" mnemonicParsing="false" onAction="#xE6action" prefHeight="40.0" prefWidth="40.0" fx:id="xE6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fx:id="LabelWarning2" fill="RED" layoutX="66.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Limitation" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</Pane>
